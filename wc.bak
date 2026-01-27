@@ -1,0 +1,15 @@
+PROGRAM wc;
+USES CopyUnit;
+
+VAR
+  nc : INTEGER;
+  c : CHARACTER;
+BEGIN
+  nc := 0;
+  WHILE(getc(c) <> ENDFILE) DO
+  BEGIN
+    nc := nc + 1;
+  END;
+  Writeln('Number of characters: ', nc);
+
+END.
